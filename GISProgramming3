@@ -1,0 +1,38 @@
+#Q1
+parishes = ['East Baton Rouge Parish', 'Jefferson Parish', 'Orleans Parish', "St. Tammany Parish", "Lafayette Parish"]
+print(parishes)
+i = 0
+for i in range(0,5):
+    print(parishes[i])
+    i=i+1
+
+#Q2
+county_pop = {
+    "East Baton Rouge Parish": 450544,
+    "Jefferson Parish": 425884,
+    "Orleans Parish": 369749,
+    "St. Tammany Parish": 273263,
+    "Lafayette Parish": 247866
+}
+print("East Baton Rouge Parish: ", county_pop["East Baton Rouge Parish"])
+print("Lafayette Parish: ", county_pop["Lafayette Parish"])
+
+y = 0
+for value in county_pop.values():
+    y = y + value
+print("total pop: ", y)
+
+#Q3
+x = 0
+for x in range(0,5):
+    key = list(county_pop.keys())
+    value = list(county_pop.values())
+    print(key[x], " has a population of ", value[x])
+    x = x + 1
+
+#Q4 (incomplete)
+x = 0
+for x in range(0,5):
+    parish[x]+".shp"
+    print(parish[x])
+    x = x + 1
